@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+    <ImageView
+        android:id="@+id/ivBuisnesImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:layout_margin="8dp"
+        android:contentDescription="@string/image_description" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_toEndOf="@+id/ivBuisnesImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="24sp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@+id/ivBuisnesImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:text="address"/>
+    
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_below="@id/tvAddress"
+        android:layout_toEndOf="@+id/ivBuisnesImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        android:text="5miles"/>
+
+
+    <RatingBar
+        android:id="@+id/rbRatings"
+        android:layout_margin="8dp"
+        android:layout_below="@id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
